@@ -115,4 +115,10 @@ public async Task<IActionResult> Index(string buscar)
 
             return View(await usuarios.ToListAsync()); // Aquí aplicamos ToListAsync sobre la consulta filtrada
         }
+# bootsrap
 
+<form asp-controller="Usuarios" asp-action="Index">
+    <p>
+        Buscar: <input type="text" name="buscar" class="form-text" />
+        <input type="submit" value="Buscar" class="btn btn-sm btn-dark" />
+    </p
